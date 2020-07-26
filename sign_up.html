@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Piedra&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="bootStrap/bootstrap.css" />
+    <link rel="stylesheet" href="bootStrap/bootstrap.js" />
+    <title>createAnAccount</title>
+  </head>
+
+  <body class="reg">
+    <div class="dim">
+      <header>
+        <nav
+          class="navbar navbar-expand-md bg-dark navbar-dark"
+          style="width: 100%; position: fixed; top: 0; z-index: 100;"
+        >
+          <!-- Brand -->
+          <a class="navbar-brand" href="#">
+            <h3>JML</h3>
+          </a>
+
+          <!-- Toggler/collapsibe Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="collapsibleNavbar"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#index.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sign-in_page.html">Login</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="sign_up.html">Register</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <form action="#" method="POST" class="container">
+        <div class="informations">
+          <div class="information1" style="border-radius: 7px;">
+            <header class="header2">Sponsor Information</header>
+            <div class="text-bg">
+              <p class="radio text-center">
+                <input type="radio" name="Manual" checked /> Manual
+              </p>
+              <div class="row justify-content-center">
+                <p class="text col-sm-4">
+                  <span>*</span>Sponsor ID
+                  <input
+                    type="number"
+                    id="have"
+                    class="form-control"
+                    name="Sponsor ID"
+                    value="number"
+                  />
+                </p>
+
+                <p class="text col-sm-4">
+                  <span>*</span>Sponsor Name
+                  <input
+                    type="text"
+                    name="SponsorName"
+                    id="SponsorName"
+                    class="form-control"
+                  />
+                </p>
+              </div>
+              <p class="">
+                <input type="checkbox" id="done" name="NoSponsor" onclick="" />
+                <label for="done" id="done"
+                  >Select if you dont have sponsor.</label
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="information2" style="border-radius: 7px;">
+            <div class="pb-3">
+              <header class="header3">User Information</header>
+              <div class="w3-center w3-border">
+                <p class="text-bg">
+                  <span>*</span>Username
+                  <input type="text" name="Username" class="form-control" />
+                </p>
+                <div class="row justify-content-center container">
+                  <p class="col-sm-6">
+                    <span>*</span>Password
+                    <input
+                      type="password"
+                      name="Password"
+                      class="form-control"
+                    />
+                  </p>
+                  <p class="col-sm-6">
+                    <span>*</span>Confirm Password
+                    <input
+                      type="password"
+                      name="Confirm Password"
+                      class="form-control"
+                    />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="information3 bg-light pb-3" style="border-radius: 7px;">
+            <header class="header4">Payment & E-Pin</header>
+            <div class="w3-center w3-border container">
+              <p>
+                <span>*</span> Select Paymode
+                <select name="Payment" id="#" class="form-control">
+                  <optgroup label="Select Paymode">
+                    <option value="Paystack">Paystack</option>
+                    <option value="Bank">Bank</option>
+                  </optgroup>
+                </select>
+              </p>
+              <span>
+                Package Amount$ 23.00
+              </span>
+            </div>
+          </div>
+
+          <div class="information4 pb-3" style="border-radius: 7px;">
+            <header class="header5">Personal Information</header>
+            <div class="w3-center w3-border container">
+              <p class="select">
+                <span>*</span>Title
+                <select name="Title" id="#" class="form-control">
+                  <optgroup label="Title">
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Miss">Miss</option>
+                  </optgroup>
+                </select>
+              </p>
+              <div class="row">
+                <p class="col-sm-6">
+                  <span>*</span>Mobile No
+                  <input type="number" name="MobileNo" class="form-control" />
+                </p>
+                <p class="col-sm-6">
+                  <span>*</span>Email ID
+                  <input type="email" name="EmailID" class="form-control" />
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="information5 pb-3" style="border-radius: 7px;">
+            <header class="header6">Contact Information</header>
+            <div class="w3-center w3-border container">
+              <p class="text">
+                <span>*</span>Postal address
+                <input type="text" name="PostalAddress" class="form-control" />
+              </p>
+              <div class="row">
+                <p class="col-sm-6">
+                  <span>*</span>Country
+                  <select name="Country " id="#" class="form-control">
+                    <optgroup label="Country ">
+                      <option value="Nigeria">Nigeria</option>
+                      <option value="Ghana">Ghana</option>
+                    </optgroup>
+                  </select>
+                </p>
+
+                <p class="col-sm-6">
+                  <span>*</span>State/Province
+                  <input
+                    type="text"
+                    placeholder="State"
+                    name="State/Province"
+                    class="form-control"
+                  />
+                </p>
+              </div>
+
+              <div class="row">
+                <p class="col-sm-6">
+                  <span>*</span>City
+                  <input
+                    type="text"
+                    placeholder="City"
+                    name="City"
+                    class="form-control"
+                  />
+                </p>
+                <p class="col-sm-6">
+                  <span>*</span>Zip Code
+                  <input type="text" name="Zip Code " class="form-control" />
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="information6" style="border-radius: 7px;">
+            <header class="header7">Bank Information</header>
+            <div class="container">
+              <div class="row">
+                <p class="col-sm-6">
+                  <span>*</span>Account Holders Name
+                  <input
+                    type="text"
+                    name="AccountHoldersName"
+                    class="form-control"
+                  />
+                </p>
+                <p class="col-sm-6">
+                  <span>*</span>Account No
+                  <input type="number" name="Account No" class="form-control" />
+                </p>
+              </div>
+
+              <div class="row">
+                
+                <p class="col-sm-6">
+                  <span>*</span>Bank Name <input type="text" name="Bank Name"  class="form-control" />
+                </p>
+
+                <p class="col-sm-6">
+                  <span>*</span>Branch Name
+                  <input type="text" name="Branch Name"  class="form-control" />
+                </p>
+
+              </div>
+
+              <div class="row">
+                <p class="col-sm-6">
+                  <span>*</span>Bank Address
+                  <textarea id="bank" cols="30" name="Bank Address" class="form-control"></textarea>
+                </p>
+
+                <p class="col-sm-6">
+                  <span>*</span>Swift Code
+                  <input type="number" name="Swift Code" class="form-control" />
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <footer class="">
+            <p>
+              <input
+                type="checkbox"
+                name="Terms & Conditions"
+                id="terms"
+                required
+              />
+             <label for="terms" class="" style="color: #fff;">
+              By clicking on register, means you agree to the <a href="#"> Terms & Conditions</a> of JML Foods investment and marketing company.
+             </label>
+            </p>
+          <div class="text-center">
+              <button class="btn btn-success">
+                Register
+              </button>
+          </div>
+          </footer>
+        </div>
+      </form>
+
+     
+    </div>
+  </body>
+</html>

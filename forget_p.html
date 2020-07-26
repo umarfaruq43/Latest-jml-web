@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forget password</title>
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="css/forget-p.css" />
+    <link rel="stylesheet" href="bootStrap/bootstrap.css" />
+    <link rel="stylesheet" href="bootStrap/bootstrap.js" />
+  </head>
+
+  <body class="set">
+    <header>
+      <nav
+        class="navbar navbar-expand-md bg-dark navbar-dark"
+        style="width: 100%; position: fixed; z-index: 100;"
+      >
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+          <h3>JML</h3>
+        </a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="collapsibleNavbar"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#index.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sign-in_page.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="smooth">
+      <div class="sub-f w3-margin w3-mobile">
+        <h2>What is my password?</h2>
+        <form action="#" method="post" class="forgot">
+          <h4>If you have forgotten your password you can reset it here</h4>
+
+          <input
+            type="email"
+            name="mail"
+            required
+            class="get"
+            placeholder="E-mail Address"
+            autofocus
+          />
+
+          <button type="submit" class="w3-teal w3-btn btn">
+            Reset Passowrd
+          </button>
+          <button
+            type="button"
+            class="w3-button w3-teal w3-round w3-hover-red w3-left"
+            id="back"
+            onclick="prv()"
+          >
+            Back
+          </button>
+          <button
+            type="button"
+            class="w3-button w3-round w3-teal w3-hover-red w3-right"
+          >
+            Cancel
+          </button>
+        </form>
+      </div>
+    </div>
+    <script>
+      function prv() {
+        history.back();
+      }
+    </script>
+  </body>
+</html>
