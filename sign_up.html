@@ -15,6 +15,42 @@
       href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Piedra&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="(max-device-width: 767px)"
+      href="./css/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="(max-device-width: 1023px)"
+      href="./css/tablet.css"
+    />
     <link rel="stylesheet" href="css/register.css" />
     <link rel="stylesheet" href="bootStrap/bootstrap.css" />
     <link rel="stylesheet" href="bootStrap/bootstrap.js" />
@@ -53,13 +89,13 @@
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Gallery</a>
+                <a class="nav-link" href="index.html#gallery">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Blog</a>
+                <a class="nav-link" href="index.html#blog">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#index.html">Contact</a>
+                <a class="nav-link" href="#index.html#contact">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="sign-in_page.html">Login</a>
@@ -252,22 +288,26 @@
               </div>
 
               <div class="row">
-                
                 <p class="col-sm-6">
-                  <span>*</span>Bank Name <input type="text" name="Bank Name"  class="form-control" />
+                  <span>*</span>Bank Name
+                  <input type="text" name="Bank Name" class="form-control" />
                 </p>
 
                 <p class="col-sm-6">
                   <span>*</span>Branch Name
-                  <input type="text" name="Branch Name"  class="form-control" />
+                  <input type="text" name="Branch Name" class="form-control" />
                 </p>
-
               </div>
 
               <div class="row">
                 <p class="col-sm-6">
                   <span>*</span>Bank Address
-                  <textarea id="bank" cols="30" name="Bank Address" class="form-control"></textarea>
+                  <textarea
+                    id="bank"
+                    cols="30"
+                    name="Bank Address"
+                    class="form-control"
+                  ></textarea>
                 </p>
 
                 <p class="col-sm-6">
@@ -286,20 +326,20 @@
                 id="terms"
                 required
               />
-             <label for="terms" class="" style="color: #fff;">
-              By clicking on register, means you agree to the <a href="#"> Terms & Conditions</a> of JML Foods investment and marketing company.
-             </label>
+              <label for="terms" class="" style="color: #fff;">
+                By clicking on register, means you agree to the
+                <a href="#"> Terms & Conditions</a> of JML Foods investment and
+                marketing company.
+              </label>
             </p>
-          <div class="text-center">
+            <div class="text-center">
               <button class="btn btn-success">
                 Register
               </button>
-          </div>
+            </div>
           </footer>
         </div>
       </form>
-
-     
     </div>
   </body>
 </html>
