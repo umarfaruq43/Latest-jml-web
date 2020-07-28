@@ -61,8 +61,14 @@
     <div class="dim">
       <header>
         <nav
-          class="navbar navbar-expand-md bg-dark navbar-dark"
-          style="width: 100%; position: fixed; top: 0; z-index: 100;"
+          class="navbar navbar-expand-md navbar-dark"
+          style="
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+            background-color: royalblue;
+          "
         >
           <!-- Brand -->
           <a class="navbar-brand" href="#">
@@ -100,7 +106,20 @@
               <li class="nav-item">
                 <a class="nav-link" href="sign-in_page.html">Login</a>
               </li>
+              <li class="list-item dropdown">
+                <a
+                  href=""
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                >
+                  JML Investment
+                </a>
 
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Option A</a>
+                  <a class="dropdown-item" href="#">Option B</a>
+                </div>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="sign_up.html">Register</a>
               </li>
@@ -317,8 +336,7 @@
               </div>
             </div>
           </div>
-
-          <footer class="">
+          <div class="mt-5">
             <p>
               <input
                 type="checkbox"
@@ -337,9 +355,37 @@
                 Register
               </button>
             </div>
-          </footer>
+          </div>
         </div>
       </form>
+      <footer class="">
+        <!-- <div class="top align-item-center justify-content-center" data-toggle="tooltip" data-placement="top"  title="Back to top" onclick="location.href='#top'" >
+                <i class="fas fa-arrow-up "></i>
+                  </div>  -->
+        <!-- <h3>JML</h3>
+
+        <div class="icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a> -->
+          <!-- <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-git"></i></a> -->
+          <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
+          <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+          <!-- <a href="#"><i class="fab fa-telegram-plane"></i></a>
+        </div> -->
+
+        <div class="middle">
+          <a href="faq.html"> FAQs</a>
+          |
+          <a href="policy.html">Privacy Policy</a>
+          |
+          <a href="terms.html">Terms & Conditions</a>
+        </div>
+        <hr style="border: 1px solid #fff;" />
+        <div class="text-dar">
+          &copy; 2019 JML INVESTMENT COMPANY. All right reserved.
+        </div>
+      </footer>
     </div>
   </body>
 </html>
