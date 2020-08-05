@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JML POLICY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Piedra&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="bootStrap/bootstrap.css">
+    <link rel="stylesheet" href="bootStrap/bootstrap.js">
+
+    <!-- HOMEPAGE RESPONSIVENESS  -->
+    <style>
+        @media screen and (max-width: 580px) {
+            header {
+                position: initial;
+                margin: 0;
+                padding: 2% 0% 0 0;
+            } 
+
+            .full {
+                width: 100%;
+
+            }
+
+            .h-image {
+                width: 20%;
+            }
+
+            .me {
+                position: relative;
+                bottom: 70px;
+                background-color: #666;
+                color: #fff;
+                margin: 0 3%;
+            }
+
+            .font {
+                font-size: 0.9em;
+            }
+
+            .bg {
+                background-color: #303030;
+            }
+
+            .bg a.active {
+                background-color: #01619D;
+                color: white;
+            }
+        }
+
+        header {
+            display: fixed;
+            position: relative;
+        }
+    </style>
+
+</head>
+<header class="w3-black">
+    <nav class="navbar navbar-expand-md navbar-dark" style="
+                width: 100%;
+                position: fixed;
+                top: 0;
+                z-index: 100;
+                background-color: royalblue;
+              ">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+            <h3>JML</h3>
+        </a>
+    
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="index.html#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="index.html#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#index.html#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="sign-in_page.html">Login</a>
+                </li>
+                <li class="list-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">
+                        JML Investment
+                    </a>
+    
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item text-dark " href="#">Revenue Earner</a>
+                        <a class="dropdown-item text-dark" href="#">Dream Builder</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="sign_up.html">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-----------------------   HEADER START  HERE --------------------------->
+
+<body>
+    <div class="w3-margin faq">
+        <div onclick="myFaq('Demo1')" class=" w3-block  w3-left-align w3-green w3-round space w3-mobile">
+            <i class="fas fa-home"> &Bernoullis;</i>
+            How much does it cost to join JML Food Trading Investment?
+        </div>
+        <div id="Demo1" class="w3-hide w3-container w3-border">
+            <p>
+                Just 5,500.
+            </p>
+        </div>
+
+        <div onclick="myFaq('Demo2')" class=" w3-block  w3-left-align w3-green w3-round space">
+            <i class="fas fa-home"> &Bernoullis;</i>
+            As soon as I register what next?
+        </div>
+        <div id="Demo2" class="w3-hide w3-container w3-border">
+            <p>
+                You will get the following product as welcome package:
+                <ul>
+                    <li>1kg of JML Poundo Yam.</li>
+                    <li>1kg of JML Wheat.</li>
+                    <li>1kg of JML Semo.</li>
+                    <li>500gm of JML Custard.</li>
+                    <li>A Sachet of Maggi.</li>
+                    <li>Noodles.</li>
+                    <li>Sugar.</li>
+                </ul>
+            </p>
+        </div>
+
+        <div onclick="myFaq('Demo3')" class=" w3-block w3-green w3-left-align w3-round space w3-mobile">
+            <i class="fas fa-home"> &Bernoullis;</i>
+            How much does it cost to join JML Food Trading Investment?
+        </div>
+        <div id="Demo3" class="w3-hide w3-container w3-border">
+            <p>
+                You have two ways to make money from the system. You choose one of two ways.
+            </p>
+        </div>
+
+        <div>
+
+            <div onclick="myFaq('Demo4')" class=" w3-block w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                What are the two ways?
+            </div>
+            <div id="Demo4" class="w3-hide w3-container w3-border">
+                <p>
+                    You can make money via Revenue, Networking or both.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo5')" class=" w3-block w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                Do I gain from referring ?
+            </div>
+            <div id="Demo5" class="w3-hide w3-container w3-border">
+                <p>
+                    Yes. You make N1000 each from anyone you refer.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo6')" class=" w3-block w3-green  w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                If I refer for someone, who gets the referring bonus.
+            </div>
+            <div id="Demo6" class="w3-hide w3-container w3-border">
+                <p>
+                    It depends on the agreement between you and your prospect. You can make money for him/her or for
+                    yourself.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo7')" class=" w3-block w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                How do I qualify to get loan?
+            </div>
+            <div id="Demo7" class="w3-hide w3-container w3-border">
+                <p>
+                    As soon as you complete your stage 4.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo8')" class=" w3-block w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                Do I have to register to get loan?
+            </div>
+            <div id="Demo8" class="w3-hide w3-container w3-border">
+                <p>
+                    Must I apply for loan?
+                </p>
+            </div>
+        </div>
+
+
+        <div>
+            <div onclick="myFaq('Demo9')" class=" w3-block w3-green  w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                Must I apply for loan?
+            </div>
+            <div id="Demo9" class="w3-hide w3-container w3-border">
+                <p>
+                    No. We don’t force our partners to apply for loan. Its your choice.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo10')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                How much interest is on the loan?
+            </div>
+            <div id="Demo10" class="w3-hide w3-container w3-border">
+                <p>
+                    No interest.
+                </p>
+            </div>
+        </div>
+
+
+        <div>
+            <div onclick="myFaq('Demo11')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                Is it true that the company sponsor a business project?
+            </div>
+            <div id="Demo11" class="w3-hide w3-container w3-border">
+                <p>
+                    Yes we do.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo12')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                Like how much business project do the system sponsor?
+            </div>
+            <div id="Demo12" class="w3-hide w3-container w3-border">
+                <p>
+                    It depends on the type of business.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo13')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                Is any return do the system get from sponsoring any project?
+            </div>
+            <div id="Demo13" class="w3-hide w3-container w3-border">
+                <p>
+                    We get 10% interest from any project we sponsor.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo14')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                Do the partners also get any share from 10% the system get ?
+            </div>
+            <div id="Demo14" class="w3-hide w3-container w3-border">
+                <p>
+                    Yes.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo15')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                How can I register?
+            </div>
+            <div id="Demo15" class="w3-hide w3-container w3-border">
+                <p>
+                    You must register via your sponsor.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo16')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                How many people do I need to refer?
+
+            </div>
+            <div id="Demo16" class="w3-hide w3-container w3-border">
+                <p>
+                    You only need 4 direct referral.
+
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo17')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                Do I need to refer before I can make money from the system?
+            </div>
+            <div id="Demo17" class="w3-hide w3-container w3-border">
+                <p>
+
+                    No.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo18')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                How do I make money without referring ?
+            </div>
+            <div id="Demo18" class="w3-hide w3-container w3-border">
+                <p>
+                    Through revenue.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo19')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                How do I make money without referring ?
+            </div>
+            <div id="Demo19" class="w3-hide w3-container w3-border">
+                <p>
+                    Through revenue.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo20')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                How much revenue will I be getting from the system?
+            </div>
+            <div id="Demo20" class="w3-hide w3-container w3-border">
+                <p>
+                    No fix amount.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo21')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                Why is there no fix amount for the revenue?
+            </div>
+            <div id="Demo21" class="w3-hide w3-container w3-border">
+                <p>
+                    There can’t be fix revenue because, our monthly sales determine the revenue to be shared among investors.
+                </p>
+            </div>
+        </div>
+        
+        <div>
+            <div onclick="myFaq('Demo22')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                Is there a fix percentage for the revenue?
+            </div>
+            <div id="Demo22" class="w3-hide w3-container w3-border">
+                <p>
+                    No, because it varies.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo23')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                Can we also market the product?
+            </div>
+            <div id="Demo23" class="w3-hide w3-container w3-border">
+                <p>
+                    Yes.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo24')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                What is direct downlines?
+            </div>
+            <div id="Demo24" class="w3-hide w3-container w3-border">
+                <p>
+                    The people you refer directly under you.
+                </p>
+            </div>
+        </div>
+        
+        <div>
+            <div onclick="myFaq('Demo25')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                Can I register more than one account ?
+            </div>
+            <div id="Demo25" class="w3-hide w3-container w3-border">
+                <p>
+                    Yes you can.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo26')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                What if in a situation where I register more than 4 people?
+            </div>
+            <div id="Demo26" class="w3-hide w3-container w3-border">
+                <p>
+                    Those will fall directly under your downlines.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo27')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                Do I need to circle out or fill?
+            </div>
+            <div id="Demo27" class="w3-hide w3-container w3-border">
+                <p>
+                    You will cash out as soon as you do the needful.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo28')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                How do I cash out?
+            </div>
+            <div id="Demo28" class="w3-hide w3-container w3-border">
+                <p>
+                    Via your local bank.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo29')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                Is there monthly or yearly?
+            </div>
+            <div id="Demo29" class="w3-hide w3-container w3-border">
+                <p>
+                    Yes and No. Yes if you are only getting revenue from the system. No, If you are referring.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo30')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                When do I get my car award ?
+            </div>
+            <div id="Demo30" class="w3-hide w3-container w3-border">
+                <p>
+                    Awards are given after your qualification. You qualify after the completion of the particular stage that has the award.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo31')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                Is it possible for my downline to breakaway?
+            </div>
+            <div id="Demo31" class="w3-hide w3-container w3-border">
+                <p>
+                    No, here, there is no break away. Your downline follows you all through your life time in this business. However, an active downline can overtake a lazy upline.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo31')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                How is revenue calculated?
+            </div>
+            <div id="Demo31" class="w3-hide w3-container w3-border">
+                <p>
+                    The total sales of the company is divided into 3 places. So one part goes to all investors.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div onclick="myFaq('Demo31')" class=" w3-block  w3-green w3-left-align w3-round space w3-mobile">
+                <i class="fas fa-home"> &Bernoullis;</i>
+                How many Years or Month could it take me to reach the final stage?
+            </div>
+            <div id="Demo31" class="w3-hide w3-container w3-border">
+                <p>
+                    It depends on how devoted you are to the investment. It could take you 6 Months, 1year or 2years.
+                </p>
+            </div>
+        </div>
+        <p>
+            <big>NB: There is also sponsorship for anyone who has a special talent like Music, Good storyline for film productions. Etc.</big>
+        </p>
+
+    </div>
+
+
+    <!----------------------- FOOTER BEGINS  HERE --------------------------->
+    <footer class="w3-center w3-black w3-padding-32 fotter ">
+        <div class="w3-dark w3-cell-middle">
+            <a href="faq.html"> FAQs</a>
+            |
+            <a href="policy.html">Privacy Policy</a>
+            |
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+        <hr>
+        <div>
+            &copy; 2019 JML iNVESTMENT COMPANY. All right reserved.
+        </div>
+    </footer>
+
+    <script src="nav-script.js"></script>
+    <script>
+        function myFaq(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace("w3-black", "w3-green");
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace("w3-green", "w3-black");
+            }
+        }
+    </script>
+</body>
+
+</html>

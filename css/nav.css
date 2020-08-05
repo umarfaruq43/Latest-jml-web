@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.b-img {
+    width: 100%
+}
+
+
+
+header {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(250, 250, 250, .7);
+}
+
+h-image {
+    width: auto;
+}
+
+
+/************RESPONSIVE EDIT**************************/
+
+
+
+
+@media screen and (max-width: 580px) {
+    header {
+        position: initial;
+        margin: 0;
+        padding: 2% 0% 0 0;
+    }
+
+    .me {
+        position: relative;
+        bottom: 70px;
+        background-color: #666;
+        color: #fff;
+        margin: 0 3%;
+    }
+}
+
+/************NAV EDIT**************************/
+nav a,nav span{
+    text-decoration: none;
+    color: #333333;
+    font: 12px "open Sans", sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-property: all;
+}
+nav a:hover{
+    color: #209BDE;
+}
+nav a.active{
+    color: #209BDE;
+}
+
+
+
+/************CONTENT EDIT**************************/
+.h1-s {
+    color: #001757;
+}
+
+.bor {
+    border: 3px solid #209BDE;
+}
+
+.w3-mine {
+    color: #001757;
+    font-weight: 700;
+    font-family: sans-serif;
+
+}
+
+.our-mission {
+    height: 100%;
+    background-color: #015F9C   ;
+    line-height: 30px;
+    color: #fff;
+}
+
+.best {
+    height: 100%;
+    background-color: #209BDE;
+    line-height: 40.48px;
+    color: #fff;
+}
+.font{
+    font-size: 17px;
+}
+
+.bg-latest-info {
+    background-color: #EAEAEA;
+}
+
+.latest {
+    text-transform: uppercase;
+    color: #333333;
+    font-weight: bold;
+}
+.sty:hover{
+    width: 39%;
+}
+.bottom-space {
+    margin-bottom: 20px;
+}
+
+.full-padding {
+    padding: 3%;
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: 800;
+}
+
+.contact {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #4D4D4D;
+    padding-top: 5%;
+}
+
+.contact input {
+    color: #fff;
+}
+
+.send {
+    width: 100%;
+    margin: 0;
+}
+
+.vision {
+    padding: 5%;
+}
+footer a{
+    text-decoration: none;
+    
+}
+big{
+    margin: 0;padding: 0;
+}
+.table{
+    list-style-position: inside;
+    margin: 0;padding: 0;
+    border-left: 2px solid #001757;
+    
+    border-right: 2px solid #001757;
+}
+h5 a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #333333;
+}
+
+/************PIRACY AND POLICY EDIT**************************/
+
+
+/************VIDEO, EVENT, PHOTO, GALLERY  EDIT**************************/
+.coming-soon{
+background-image: url(images/event/cooming-soon.jpg);
+
+background-size: cover;
+}
+
+
+/************COMMING SOON IMG MAGNIFIER EDIT**************************/
+
+* {box-sizing: border-box;}
+
+
+/************FAQ EDIT**************************/
+.answer{
+    display: none;
+}
+
+.close{
+    cursor: pointer;
+}
+
+
+/************policy EDIT**************************/
+
+ /* Whatever your defaults are */
+ ol {
+    list-style-type:upper-alpha;
+    position:relative;
+    padding: 0 7% ;
+  }
+  
+  /* Targets only .customListBox's first level child ol elements */
+  .customListBox > ol { 
+      counter-increment: lists;
+      counter-reset: items;
+      list-style-type: none;
+  }
+  
+   /* Targets only the first level child li elements of the first ol's in .customListBox*/
+  .customListBox > ol > li::before {
+      content: counters(lists, "", decimal) "." counters(items, "", decimal) " ";
+      counter-increment: items;
+      position:absolute;
+      left: 0;
+  }
+
+  /**************** FAQ PAGE *************************/
+
+  .space{
+      padding: 1em;
+      margin: 1% 0;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 0 2px #000;
+  }
+/* *{
+    border: 1px solid red;
+} */

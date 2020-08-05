@@ -1,0 +1,38 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f5f5f5;
+}
+/* .profile{
+    height: 44em;
+} */
+.dashboard{
+    background-color: rgb(18,32,69);
+}
+.hover:hover{
+    background-color: grey;
+}
+.bg{
+    background-image: url(../img/bg.jpg);
+}
+.picture{
+    height: 15em;
+    width: 15em;
+  border-radius: 50%;
+}
+.photo{
+    border-radius: 50%;
+}
+.bt1{
+    border-bottom: 1px solid grey;
+    padding: 0 0 1em 1em;
+}
+.refer, .wallet, .withdral{
+    border-radius: 5px;
+    width:30% ;
+    margin-left:;
+    color: white;
+     padding: 5em 2em 5em 0;
+}

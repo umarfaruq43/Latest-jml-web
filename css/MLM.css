@@ -1,0 +1,73 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    background-color: #cecaca;
+}
+.membership{
+    font-size: 2em;
+}
+.bonus, .wallet, .transaction, .order, .downlines, .calculate, .refer{
+    height: 12em;
+    width: 18em;
+    margin: 1em 1em 0 0;
+    border-radius: 5px;
+    position: relative;
+}
+
+.wallet{
+    background: url(../img/wallet.png) no-repeat right;
+    background-size: 120px 100px;
+}
+.wallet_positn, .transactn_positn, .order_positn, .calculate_positn, .refer_positn{
+    height: 12em;
+    width: 18em;
+    position: absolute;
+}
+.wallet_positn{
+    background-color: rgb(0, 255, 21, 0.8);
+}
+.wallet_bottom{
+    background-color: rgb(0, 255, 21)
+}
+.transaction{
+    background: url(../img/transaction.png) no-repeat right;
+    background-size:120px 100px ;
+}
+.transactn_positn{
+    background-color: rgb(255, 99, 71, 0.9);
+}
+.transact_bottom{
+    background-color: rgb(255, 99, 71)
+}
+.order{
+    background: url(../img/order.png) no-repeat right;
+    background-size: 120px 100px;
+}
+.order_positn{
+    background-color: rgb(255, 255, 1, 0.8);
+}
+.order_bottom{
+    background-color: rgb(255, 255, 1)
+}
+.calculate {
+    background: url(../img/add.png) no-repeat right;
+    background-size:120px 100px ;
+}
+.calculate_positn{
+    background-color: rgb(1, 136, 1, 0.6);
+}
+.calculate_bottom{
+    background-color:rgb(1, 167, 1, 0.3) ;
+}
+.refer{
+    background: url(../img/refer.png) no-repeat right;
+    background-size:120px 100px ;
+}
+.refer_positn{
+    background-color: rgb(240, 204, 1, 0.8);
+}
+.refer_bottom{
+    background-color: rgb(240, 204, 1)
+}
